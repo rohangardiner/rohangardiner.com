@@ -187,6 +187,42 @@ export default function Page() {
 					</Link>
 				</Button>
 			</PageSection>
+
+			<PageSection>
+				<Heading as="h2" className="text-hgeading mb-2">
+					Windows 2048
+				</Heading>
+				<Box className="mb-2">
+					<Badge size="2">Godot</Badge> <Badge size="2">GDScript</Badge>
+				</Box>
+				<Text as="p" className="text-body mb-2">
+					2048 clone using Windows versions :)
+				</Text>
+				<div className="mb-2 w-full md:w-1/2">
+					<ImageGallery
+						images={[
+							{
+								src: "/images/2048-game.jpg",
+								alt: "Windows 2048",
+								caption: "Slide the tiles Up, Down, Left, or Right to combine Windows versions",
+							},
+							{
+								src: "/images/2048-play.gif",
+								alt: "Windows 2048 gameplay",
+								caption: "Combine enough to work your way up to Windows 11",
+							},
+						]}
+					/>
+				</div>
+				<Text as="p" className="text-body mb-2">
+					Download the game and try it for yourself
+				</Text>
+				<Button asChild={true} color="teal" size="3" variant="classic">
+					<Link download href="https://assets.rohangardiner.com/games/windows-2048.zip">
+						<FaDownload /> Download
+					</Link>
+				</Button>
+			</PageSection>
 		</main>
 	);
 }
