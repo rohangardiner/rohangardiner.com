@@ -1,26 +1,74 @@
+/* Put Radix in its own layer below Tailwind's utilities so classes like mb-4 can override it.
+   Unlayered CSS always beats layered CSS, which is why Radix's margin reset was winning. */
+@layer theme, base, radix, components, utilities;
 @import "tailwindcss";
+@import "@radix-ui/themes/styles.css" layer(radix);
 
+/* Make Tailwind's dark: variant follow the .dark class instead of the media query. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Palette is built around the logo green (#4ae39d). */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f6faf8;
+  --foreground: #0f1f19;
+  --muted: #5b6f66;
+  --surface: #ffffff;
+  --border: #dce7e1;
+
+  --brand: #4ae39d;
+  --brand-strong: #047857; /* readable brand green for text/links on light bg */
+
+  --sidebar: #052e22;
+  --sidebar-foreground: #e6f4ec;
+  --sidebar-muted: #8fb5a3;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-muted: var(--sidebar-muted);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-mono: var(--font-geist-mono, ui-monospace, SFMono-Regular, Menlo, Consolas, monospace);
+  --font-heading: var(--font-courier-prime), ui-monospace, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* next-themes puts .dark on <html> (following the system setting by default). */
+:root.dark {
+  --background: #0b1210;
+  --foreground: #e6efe9;
+  --muted: #8fa39a;
+  --surface: #121c18;
+  --border: #1f2d27;
+
+  --brand-strong: #4ae39d;
+
+  --sidebar: #07140f;
+}
+
+/* Radix <Heading> reads its font from this variable on the Theme wrapper */
+:root .radix-themes {
+  --heading-font-family: var(--font-heading);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  a {
+    color: var(--brand-strong);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
 }
