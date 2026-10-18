@@ -62,7 +62,10 @@ export default function Page() {
 					The game is still in development, so if you run into any issues please let me know.
 				</Text>
 				<Button asChild={true} color="teal" size="3" variant="classic">
-					<Link download href="/games/escape-from-tech-support.zip">
+					<Link
+						target="_blank"
+						href="https://assets.rohangardiner.com/games/Escape%20from%20Tech%20Support.zip"
+					>
 						<FaDownload /> Download a demo
 					</Link>
 				</Button>
@@ -123,8 +126,8 @@ export default function Page() {
 				<Text as="p" className="text-body mb-2">
 					Download the game and try it for yourself
 				</Text>
-				<Button asChild={true} color="teal" size="3">
-					<Link download href="/games/pit-game.zip">
+				<Button asChild={true} color="teal" size="3" variant="classic">
+					<Link download href="https://assets.rohangardiner.com/games/pit-game.zip">
 						<FaDownload /> Download
 					</Link>
 				</Button>
@@ -178,8 +181,8 @@ export default function Page() {
 				<Text as="p" className="text-body mb-2">
 					Download the game and try it for yourself
 				</Text>
-				<Button asChild={true} color="teal" size="3">
-					<Link download href="/games/catch-all.zip">
+				<Button asChild={true} color="teal" size="3" variant="classic">
+					<Link download href="https://assets.rohangardiner.com/games/catch-all.zip">
 						<FaDownload /> Download
 					</Link>
 				</Button>
