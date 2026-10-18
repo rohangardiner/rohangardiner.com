@@ -8,7 +8,7 @@ interface AsciiArtProps {
     isAnimated: boolean;
 }
 
-const FRAME_MS = 20;
+const FRAME_MS = 40;
 const DENSE_CHARS = "▒░█";
 const SPARSE_CHARS = "▒ ░ █";
 
