@@ -82,14 +82,9 @@ export default function Page() {
 					<ImageGallery
 						images={[
 							{
-								src: "/images/quiz-page.jpg",
+								src: "/ponderorb.jpg",
 								alt: "Default",
-								caption: "Default",
-							},
-							{
-								src: "/images/quiz-settings.jpg",
-								alt: "Default",
-								caption: "Default",
+								caption: "Default img",
 							},
 						]}
 					/>
