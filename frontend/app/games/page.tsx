@@ -37,23 +37,23 @@ export default function Page() {
 						images={[
 							{
 								src: "/images/escape-title.jpg",
-								alt: "Default",
+								alt: "Escape from Tech Support title screen",
 							},
 							{
 								src: "/images/escape-battery.jpg",
-								alt: "Default",
+								alt: "Escape from Tech Support items pickup and drop",
 							},
 							{
 								src: "/images/escape-stalker.jpg",
-								alt: "Default",
+								alt: "Escape from Tech support enemy",
 							},
 							{
 								src: "/images/escape-flares.jpg",
-								alt: "Default",
+								alt: "Escape from Tech Support gameplay",
 							},
 							{
 								src: "/images/escape-godot.jpg",
-								alt: "Default",
+								alt: "Escape from Tech Support development environment",
 							},
 						]}
 					/>

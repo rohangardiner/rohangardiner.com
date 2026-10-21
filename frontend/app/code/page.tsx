@@ -36,13 +36,15 @@ export default function Page() {
 						images={[
 							{
 								src: "/images/quiz-page.jpg",
-								alt: "Default",
-								caption: "Default",
+								alt: "Career Quiz question shown on a WordPress page",
+								caption:
+									"A clean, theme-friendly quiz that drops into any page. Questions are drawn at random from a pool, so no two attempts feel the same.",
 							},
 							{
 								src: "/images/quiz-settings.jpg",
-								alt: "Default",
-								caption: "Default",
+								alt: "Career Quiz settings page in WordPress Dashboard",
+								caption:
+									"Every answer maps to an outcome with its own weighting, so responses lead to genuinely different results.",
 							},
 						]}
 					/>
@@ -82,9 +84,16 @@ export default function Page() {
 					<ImageGallery
 						images={[
 							{
-								src: "/ponderorb.jpg",
-								alt: "Default",
-								caption: "Default img",
+								src: "/images/ads-display.jpg",
+								alt: "WordPress website showing the Display Ad popover",
+								caption:
+									"Eye-catching without being intrusive: a dismissible side popover, with creative chosen to pop against the host site's colours.",
+							},
+							{
+								src: "/images/ads-settings.jpg",
+								alt: "Display Ad settings page in WordPress Dashboard",
+								caption:
+									"Customisable from the WordPress Dashboard. Switch between vertical, square, and horizontal formats, with advertiser assets preloaded and ready to go.",
 							},
 						]}
 					/>
@@ -151,8 +160,9 @@ export default function Page() {
 						images={[
 							{
 								src: "/images/art-generator.jpg",
-								alt: "Default",
-								caption: "Default",
+								alt: "Art Generator code and output running in JSFiddle",
+								caption:
+									"500 randomly coloured HSL squares and a dozen lines of JavaScript. Generative art, before generative art was cool.",
 							},
 						]}
 					/>
