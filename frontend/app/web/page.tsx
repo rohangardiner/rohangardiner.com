@@ -27,17 +27,24 @@ export default function Page() {
 				</Text>
 				<Text as="p" className="text-body mb-2">
 					This has been my biggest project to date, and certinly the most ambitious. AACAD
-					encompasses a staggering number of potential users, and when designing their new
-					membership portal platform, every aspect needed to accommodate them.
+					encompasses a staggering audience of current and potential members, and when designing
+					their new membership portal platform, every aspect needed to accommodate them.
 				</Text>
 				<div className="mb-2 w-full md:w-2/3">
 					<ImageGallery
 						images={[
-							{
-								src: "/ponderorb.jpg",
-								alt: "Default",
-								caption: "Default img",
-							},
+							{ src: "/images/aacad-home-logout.jpg", alt: "Default", caption: "Default img" },
+							{ src: "/images/aacad-home.jpg", alt: "Default", caption: "Default img" },
+							{ src: "/images/aacad-directory.jpg", alt: "Default", caption: "Default img" },
+							{ src: "/images/aacad-community-home.jpg", alt: "Default", caption: "Default img" },
+							{ src: "/images/aacad-dashboard.jpg", alt: "Default", caption: "Default img" },
+							{ src: "/images/aacad-members.jpg", alt: "Default", caption: "Default img" },
+							{ src: "/images/aacad-member-details.jpg", alt: "Default", caption: "Default img" },
+							{ src: "/images/aacad-post-new.jpg", alt: "Default", caption: "Default img" },
+							{ src: "/images/aacad-group-edit.jpg", alt: "Default", caption: "Default img" },
+							{ src: "/images/aacad-product-edit.jpg", alt: "Default", caption: "Default img" },
+							{ src: "/images/aacad-form-entry.jpg", alt: "Default", caption: "Default img" },
+							{ src: "/images/aacad-emails-edit.jpg", alt: "Default", caption: "Default img" },
 						]}
 					/>
 				</div>
